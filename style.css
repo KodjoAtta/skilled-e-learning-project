@@ -1,555 +1,424 @@
-             <style>.head {
-             padding: 10px;
-         }
-         
-         .body {
-             background-color: bisque;
-         }
-         
-         .mobile {
-             visibility: hidden;
-             width: 0px;
-             height: 0px;
-         }
-         
-         .logo {
-             margin-left: 40px;
-             margin-top: 40px;
-         }
-         
-         .icon {
-             position: absolute;
-         }
-         
-         .btn-one {
-             margin-top: 40px;
-             margin-right: 100px;
-             float: right;
-             border: none;
-             border-radius: 25px;
-             height: 40px;
-             background-color: #13183f;
-             color: white;
-             width: 10%;
-             cursor: pointer;
-             transition: 0.15s;
-         }
-         
-         .btn-one:hover {
-             background: rgba(102, 108, 163, 1);
-         }
-         
-         .grid-container2 {
-             display: inline-block;
-             grid-template-columns: auto;
-             grid-template-rows: 1, 5vw;
-             width: 450px;
-             height: inherit;
-             vertical-align: top;
-             margin-top: 40px;
-         }
-         
-         .image {
-             display: inline;
-             width: 50%;
-             vertical-align: top;
-         }
-         
-         .mobile {}
-         
-         .image-hero {
-             width: 500px;
-             float: right;
-         }
-         
-         .grid-container {
-             display: inline-grid;
-             grid-template-columns: 1fr 1fr 1fr;
-             margin-top: 40px;
-             margin-right: 40px;
-             margin-left: 40px;
-             justify-content: space-between;
-             align-content: center;
-             grid-column-gap: 50px;
-             grid-row-gap: 50px;
-             padding: 15px;
-         }
-         
-         .maxi {
-             font-size: 56px;
-             line: 70px;
-             font-family: plus Jakarta Sans ExtraBold;
-             margin-left: 40px;
-             width: 420px;
-             display: inline-block;
-         }
-         
-         .our {
-             font-size: 18px;
-             line: 28px;
-             font-family: plus Jakarta San ExtraBold;
-             margin-left: 40px;
-             width: 380px;
-             display: inline-block;
-         }
-         
-         .btn-two {
-             border-radius: 25px;
-             margin-left: 40px;
-             color: white;
-             height: 40px;
-             width: 30%;
-             background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
-             margin-top: 20px;
-             border: none;
-             cursor: pointer;
-         }
-         
-         .btn-two:hover {
-             background: rgba(255, 167, 195, 1);
-         }
-         
-         .header {
-             margin-left: 40px;
-         }
-         
-         .first {
-             max-height: 300px;
-             max-width: 300px;
-             margin-top: 30px;
-             margin-bottom: 10px;
-         }
-         
-         .most {
-             background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
-             border-radius: 10px;
-         }
-         
-         .one {
-             background-color: rgb(255, 249, 249);
-             border-radius: 10px;
-         }
-         
-         .check {
-             font-size: 32px;
-             line: 32px;
-             font-family: plus Jakarta San ExtraBold;
-             color: white;
-             margin-left: 20px;
-         }
-         
-         .animation {
-             font-size: 24px;
-             line: 28px font-family: plus Jakarta San ExtraBold;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .learn {
-             font-family: plus Jakarta San Meduim;
-             font-size: 18px;
-             font-weight: 500;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .get {
-             font-family: plus Jakarta San;
-             font-size: 18px;
-             font-weight: 700;
-             line-height: 28px;
-             color: #F74780;
-             vertical-align: top;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .design {
-             font-size: 24px;
-             line: 28px font-family: plus Jakarta San ExtraBold;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .create {
-             font-family: plus Jakarta San Meduim;
-             font-size: 18px;
-             font-weight: 500;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .photo {
-             font-size: 24px;
-             line: 28px font-family: plus Jakarta San ExtraBold;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .explore {
-             font-family: plus Jakarta San Meduim;
-             font-size: 18px;
-             font-weight: 500;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .start {
-             font-family: plus Jakarta San;
-             font-size: 18px;
-             font-weight: 700;
-             line-height: 28px;
-             color: #F74780;
-             margin-bottom: 10px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .photo {
-             font-family: plus Jakarta San;
-             font-size: 24px;
-             font-weight: 700;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .crypto {
-             font-size: 24px;
-             line: 28px font-family: plus Jakarta San ExtraBold;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .all {
-             font-family: plus Jakarta San Meduim;
-             font-size: 18px;
-             font-weight: 500;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .start {
-             font-family: plus Jakarta San;
-             font-size: 18px;
-             font-weight: 700;
-             line-height: 28px;
-             color: #F74780;
-             margin-bottom: 10px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .business {
-             font-size: 24px;
-             line: 28px font-family: plus Jakarta San ExtraBold;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .step {
-             font-family: plus Jakarta San Meduim;
-             font-size: 18px;
-             font-weight: 500;
-             line-height: 28px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .start {
-             font-family: plus Jakarta San;
-             font-size: 18px;
-             font-weight: 700;
-             line-height: 28px;
-             color: #F74780;
-             margin-top: 10px;
-             margin-left: 20px;
-             margin-right: 20px;
-         }
-         
-         .skilled-foot {
-             margin-left: 30px;
-             margin-top: 10px;
-             display: inline-block;
-         }
-         
-         .btn-foot {
-             border-radius: 25px;
-             margin-top: 10px;
-             margin-bottom: 5px;
-             float: right;
-             margin-right: 100px;
-             height: 40px;
-             width: 10%;
-             background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
-             color: white;
-             border: none;
-         }
-         
-         .btn-foot:hover {
-             background: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
-         }
-         
-         .foot {
-             background-color: #13183f;
-             height: 60px;
-             width: 2000;
-             position: cover;
-             margin-top: 30px;
-         }
-         
-         @media only screen and (max-width: 768px) {
-             .btn-one {
-                 margin-top: 40px;
-                 margin-right: 100px;
-                 float: right;
-                 border: none;
-                 border-radius: 25px;
-                 height: 40px;
-                 background-color: #13183f;
-                 color: white;
-                 width: 15%;
-                 cursor: pointer;
-                 transition: 0.15s;
-             }
-             .mobile {
-                 display: none;
-             }
-             .grid-container2 {
-                 display: inline-block;
-                 grid-template-columns: 1;
-                 grid-template-rows: 1, 5vw;
-                 width: 350px;
-                 height: inherit;
-                 vertical-align: top;
-                 margin-top: 40px;
-             }
-             .maxi {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 40px;
-                 font-weight: 800;
-                 line-height: 50px;
-                 letter-spacing: 0px;
-                 text-align: left;
-                 width: 290px;
-             }
-             .our {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-                 width: 310px;
-             }
-             .image-hero {
-                 width: 300px;
-                 float: right;
-                 vertical-align: top;
-             }
-             .grid-container {
-                 display: inline-grid;
-                 grid-template-columns: 1fr 1fr;
-                 margin-top: 40px;
-                 margin-right: 40px;
-                 margin-left: 40px;
-                 justify-content: space-between;
-                 align-content: center;
-                 grid-column-gap: 150px;
-                 grid-row-gap: 50px;
-             }
-             .check {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 24px;
-                 font-weight: 800;
-                 line-height: 32px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .out {
-                 background-color: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
-                 border-radius: 2px;
-             }
-             .animation {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 20px;
-                 font-weight: 800;
-                 line-height: 25px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .learn {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .get {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 18px;
-                 font-weight: 700;
-                 line-height: 28px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .design {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 20px;
-                 font-weight: 800;
-                 line-height: 25px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .create {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .photo {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 20px;
-                 font-weight: 800;
-                 line-height: 25px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .explore {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .crypto {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 20px;
-                 font-weight: 800;
-                 line-height: 25px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .all {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .business {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 20px;
-                 font-weight: 800;
-                 line-height: 25px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .step {
-                 font-family: Plus Jakarta Sans;
-                 font-size: 16px;
-                 font-weight: 500;
-                 line-height: 26px;
-                 letter-spacing: 0px;
-                 text-align: left;
-             }
-             .btn-foot {
-                 border-radius: 25px;
-                 margin-top: 10px;
-                 margin-bottom: 5px;
-                 float: right;
-                 margin-right: 100px;
-                 height: 40px;
-                 width: 15%;
-                 background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
-                 color: white;
-                 border: none;
-             }
-             @media screen and (max-width: 480px) {
-                 .image-hero {
-                     position: absolute;
-                     visibility: hidden;
-                     height: 0px;
-                     width: 0px;
-                 }
-                 .mobile {
-                     visibility: visible;
-                     height: 100px;
-                     width: 100px;
-                 }
-                 .btn-one {
-                     margin-top: 40px;
-                     margin-right: 20px;
-                     float: right;
-                     border: none;
-                     border-radius: 25px;
-                     height: 40px;
-                     background-color: #13183f;
-                     color: white;
-                     width: 30%;
-                     cursor: pointer;
-                     transition: 0.15s;
-                 }
-                 .maxi {
-                     font-family: Plus Jakarta Sans;
-                     font-size: 40px;
-                     font-weight: 800;
-                     line-height: 50px;
-                     letter-spacing: 0px;
-                     text-align: left;
-                 }
-                 .our {
-                     font-family: Plus Jakarta Sans;
-                     font-size: 16px;
-                     font-weight: 500;
-                     line-height: 26px;
-                     letter-spacing: 0px;
-                     text-align: left;
-                 }
-                 .image-hero {
-                     width: 200px;
-                     border-radius: 50px;
-                     float: left;
-                     margin-left: 15px;
-                     display: none;
-                 }
-                 .mobile {
-                     display: show;
-                     float: left;
-                     margin-right: 20px;
-                     position: center;
-                 }
-                 .grid-container {
-                     display: inline-grid;
-                     grid-template-columns: 1fr;
-                     margin-top: 40px;
-                     margin-right: 40px;
-                     margin-left: 40px;
-                     justify-content: space-between;
-                     align-content: center;
-                     grid-column-gap: 150px;
-                     grid-row-gap: 50px;
-                 }
-                 .btn-foot {
-                     border-radius: 25px;
-                     margin-top: 10px;
-                     margin-bottom: 5px;
-                     float: right;
-                     margin-right: 20px;
-                     height: 40px;
-                     width: 25%;
-                     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
-                     color: white;
-                     border: none;
-                 }
-             }
-             </style>
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    --headerButtonBC: #13183F;
+    --headerButtonHover: #666CA3;
+    --buttonWidth: 117px;
+    --buttonHeight: 45px;
+    --pColor: #83869A;
+    --hColor: #13183F;
+    --footerButtonBC: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --footerButtonHover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+#desktop-image {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#tablet-image {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#header img {
+    position: absolute;
+    left: 5%;
+    top: 50px;
+}
+
+#header p {
+    background-color: var(--headerButtonBC);
+    border-radius: 28px;
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    top: 50px;
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+}
+
+#header p a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    top: 30%;
+}
+
+#header p:hover {
+    background-color: var(--headerButtonHover);
+}
+
+#info {
+    position: relative;
+    top: 100px;
+}
+
+#skill {
+    position: relative;
+    top: 40px;
+    left: 5%;
+    width: 350px;
+}
+
+#skill h1 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 71px;
+    color: var(--hColor);
+}
+
+#skill p {
+    margin-top: 20px;
+    color: var(--pColor);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#skill h4 {
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#skill h4 a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    top: 30%;
+}
+
+#skill h4:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+#info img {
+    margin-top: 20px;
+    position: relative;
+    width: 400px;
+}
+
+#courses {
+    background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    position: relative;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.box {
+    width: 300px;
+    height: 280px;
+    background: #FFFFFF;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#box-1 {
+    width: 300px;
+    height: 280px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#box-1 p {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 50px;
+    top: 20px;
+}
+
+.box h1 {
+    color: var(--hColor);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.box p {
+    color: var(--pColor);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.box a {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    text-decoration: none;
+    top: 30px;
+}
+
+.box a:hover {
+    color: #FFA7C3
+}
+
+.box img {
+    position: relative;
+    top: -20px;
+    padding-left: 20px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    background: #13183F;
+    top: auto;
+}
+
+footer img {
+    position: absolute;
+    left: 5%;
+    top: 30px;
+}
+
+footer p {
+    background: var(--footerButtonBC);
+    border-radius: 28px;
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    top: 20px;
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+}
+
+footer p a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    top: 30%;
+}
+
+footer p:hover {
+    background: var(--footerButtonHover);
+}
+
+@media (min-width: 720px) {
+    #desktop-image {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #mobile-image {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    #info {
+        position: relative;
+        top: 120px;
+    }
+    #tablet-image {
+        visibility: visible;
+        width: 800px;
+        height: 500px;
+    }
+    #skill {
+        position: relative;
+        left: 5%;
+        width: 300px;
+    }
+    #skill h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 71px;
+        color: var(--hColor);
+    }
+    #skill p {
+        margin-top: 20px;
+        color: var(--pColor);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    #skill h4 {
+        width: var(--buttonWidth);
+        height: var(--buttonHeight);
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        border-radius: 31.5px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #skill h4 a {
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        top: 30%;
+    }
+    #skill h4:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    }
+    #info img {
+        position: relative;
+        width: 600px;
+        right: -50vw;
+        top: -400px;
+    }
+    #courses {
+        background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        position: relative;
+        left: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -203px;
+        margin-bottom: 120px;
+    }
+    .box {
+        height: 250px;
+        margin: 30px 0px auto 0px;
+    }
+    #box-1 {
+        height: 250px;
+        margin: 30px 0px auto 0px;
+    }
+}
+
+@media (min-width:1000px) {
+    #tablet-image {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    #mobile-image {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    #desktop-image {
+        visibility: visible;
+        height: auto;
+        width: 800px;
+    }
+    #header {
+        position: relative;
+        z-index: 1;
+    }
+    #header img {
+        position: absolute;
+        left: 15%;
+        top: 50px;
+    }
+    #header p {
+        right: 18%;
+        top: 50px;
+    }
+    /* info */
+    #info {
+        min-width: 600px;
+        min-height: 700px;
+        position: relative;
+        top: 150px;
+    }
+    #skill {
+        position: relative;
+        top: 40px;
+        left: 15%;
+        width: 350px;
+    }
+    #skill h1 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 71px;
+    }
+    #skill p {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #info img {
+        position: absolute;
+        width: 650px;
+        right: 0vw;
+        top: -25vh;
+    }
+    /* courses */
+    #courses {
+        position: relative;
+        width: 950px;
+        height: 650px;
+        left: 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: -10px;
+    }
+    .box {
+        width: 270px;
+        height: 280px;
+    }
+    #box-1 {
+        width: 270px;
+        height: 280px;
+    }
+    /* footer */
+    footer {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        left: 0px;
+        background: #13183F;
+    }
+    footer img {
+        position: absolute;
+        left: 15%;
+        top: 30px;
+    }
+    footer p {
+        background: var(--footerButtonBC);
+        border-radius: 28px;
+        text-align: center;
+        position: absolute;
+        right: 15%;
+        top: 20px;
+        width: var(--buttonWidth);
+        height: var(--buttonHeight);
+    }
+    footer p a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+        top: 30%;
+    }
+    footer p:hover {
+        background: var(--footerButtonHover);
+    }
+}
