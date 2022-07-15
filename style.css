@@ -136,7 +136,7 @@ body {
     margin: 20px;
 }
 
-#box-1 {
+#first-box {
     width: 300px;
     height: 280px;
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -145,7 +145,7 @@ body {
     margin: 20px;
 }
 
-#box-1 p {
+#first-box p {
     position: relative;
     font-style: normal;
     font-weight: 700;
@@ -304,7 +304,7 @@ footer p:hover {
         height: 250px;
         margin: 30px 0px auto 0px;
     }
-    #box-1 {
+    #first-box {
         height: 250px;
         margin: 30px 0px auto 0px;
     }
@@ -341,7 +341,6 @@ footer p:hover {
         right: 18%;
         top: 50px;
     }
-    /* info */
     #info {
         min-width: 600px;
         min-height: 700px;
@@ -371,7 +370,6 @@ footer p:hover {
         right: 0vw;
         top: -25vh;
     }
-    /* courses */
     #courses {
         position: relative;
         width: 950px;
@@ -385,11 +383,10 @@ footer p:hover {
         width: 270px;
         height: 280px;
     }
-    #box-1 {
+    #first-box {
         width: 270px;
         height: 280px;
     }
-    /* footer */
     footer {
         position: relative;
         width: 100%;
